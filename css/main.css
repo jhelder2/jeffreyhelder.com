@@ -1,3 +1,197 @@
+@font-face {
+  font-family: 'kollektif-regular';
+  src: url("/font/kollektif-webfont.woff2") format("woff2"), url("/font/kollektif-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'kollektif-bold';
+  src: url("/font/kollektif-bold-webfont.woff2") format("woff2"), url("/font/kollektif-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'kollektif-bold_italic';
+  src: url("/font/kollektif-bolditalic-webfont.woff2") format("woff2"), url("/font/kollektif-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'kollektif-italic';
+  src: url("/font/kollektif-italic-webfont.woff2") format("woff2"), url("/font/kollektif-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'kollektif-regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.05em; }
 
-.hidden {display: none;}
+.start-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  width: 100%;
+  position: fixed; }
+  .start-nav #main-logo {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 80%;
+    background-image: url(/images/logo_colour_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; }
+    .start-nav #main-logo:hover {
+      cursor: pointer; }
+  .start-nav #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 40%;
+    background-image: url(/images/burger_menu_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; }
+    .start-nav #main-nav ul {
+      display: none; }
 
+.sticky-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.96);
+  animation: nav-drop 1s ease-in-out 1; }
+  .sticky-nav #main-logo {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 80%;
+    background-image: url(/images/logo_colour.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; }
+    .sticky-nav #main-logo:hover {
+      cursor: pointer; }
+  .sticky-nav #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 40%;
+    background-image: url(/images/burger_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; }
+    .sticky-nav #main-nav ul {
+      display: none; }
+
+.sticky-nav-hide {
+  animation: nav-hide .8s ease-in-out 1;
+  animation-fill-mode: forwards; }
+
+@keyframes nav-drop {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 100; } }
+@keyframes nav-hide {
+  0% {
+    transform: translateY(0px);
+    opacity: 100; }
+  100% {
+    transform: translateY(-80px);
+    opacity: 0; } }
+main {
+  width: 100%; }
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+  background-image: url(/images/DSC_2371.JPG);
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  background-position: center center;
+  background-position-x: 45%; }
+  #hero #gradient {
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0, rgba(100, 0, 230, 0.295) 40%, rgba(38, 0, 177, 0.637) 100%); }
+  #hero #hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 200px;
+    margin-left: 20px;
+    color: white; }
+    #hero #hero-text h1 {
+      font-size: 2.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
+    #hero #hero-text h3 {
+      font-size: 1.3em;
+      padding: 10px 0; }
+    #hero #hero-text p {
+      font-size: 0.8em;
+      padding: 5px 0;
+      letter-spacing: 1.1px; }
+    #hero #hero-text button {
+      margin-top: 15px;
+      width: 38%;
+      max-width: 150px;
+      padding: 8px 0 6px 0;
+      background: linear-gradient(to bottom, #fce388 5%, #ffc600 100%);
+      background-color: #fce388;
+      border-radius: 20px;
+      border: 1px solid #ffc600;
+      cursor: pointer;
+      color: black;
+      font-family: Arial;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none; }
+      #hero #hero-text button:hover {
+        background: linear-gradient(to bottom, #ffc600 5%, #fce388 100%); }
+
+#about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-top: 40px; }
+  #about h2 {
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%; }
+  #about #about-pic {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-image: url(/images/j_pose_back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center; }
+    #about #about-pic #box {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 200px;
+      margin: auto;
+      margin-bottom: 0;
+      border: solid black 2px; }
+      #about #about-pic #box img {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */

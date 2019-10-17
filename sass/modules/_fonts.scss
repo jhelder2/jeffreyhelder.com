@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'kollektif-regular';
+    src: url('/font/kollektif-webfont.woff2') format('woff2'),
+         url('/font/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kollektif-bold';
+    src: url('/font/kollektif-bold-webfont.woff2') format('woff2'),
+         url('/font/kollektif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kollektif-bold_italic';
+    src: url('/font/kollektif-bolditalic-webfont.woff2') format('woff2'),
+         url('/font/kollektif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kollektif-italic';
+    src: url('/font/kollektif-italic-webfont.woff2') format('woff2'),
+         url('/font/kollektif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'kollektif-regular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    line-height: 1.05em;
+}

@@ -1,0 +1,90 @@
+.start-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    width: 100%;
+    position: fixed;
+
+    #main-logo {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: 80%;
+        background-image: url(/images/logo_colour_white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+
+        &:hover{cursor: pointer;}
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        height: 40%;
+        background-image: url(/images/burger_menu_white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+
+        ul {
+            display: none;
+        }
+    }
+
+}
+
+.sticky-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, .96);
+    animation: nav-drop 1s ease-in-out 1;
+
+    #main-logo {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: 80%;
+        background-image: url(/images/logo_colour.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+
+        &:hover{cursor: pointer;}
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        height: 40%;
+        background-image: url(/images/burger_menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+.sticky-nav-hide {animation: nav-hide .8s ease-in-out 1; animation-fill-mode: forwards;}
+
+@keyframes nav-drop {
+    0% {transform: translateY(-80px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 100;}
+}
+
+@keyframes nav-hide {
+    0% {transform: translateY(0px); opacity: 100;}
+    100% {transform: translateY(-80px); opacity: 0;}
+}
