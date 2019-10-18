@@ -224,4 +224,107 @@ main {
     #about #about-text i {
       font-style: italic; }
 
+#banner-skills {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/designer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position-x: 70%; }
+  #banner-skills #gradient {
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0, rgba(100, 0, 230, 0.295) 40%, rgba(38, 0, 177, 0.637) 100%); }
+  #banner-skills #banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    color: white; }
+    #banner-skills #banner-text h2 {
+      padding: 40px 0;
+      display: inline-block;
+      text-align: center;
+      font-size: 2.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      width: 100%; }
+    #banner-skills #banner-text h3 {
+      font-size: 1.25em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: bold; }
+    #banner-skills #banner-text p {
+      font-size: 1em;
+      padding: 5px 0;
+      letter-spacing: 1.1px;
+      width: 90%;
+      margin: 0 auto; }
+    #banner-skills #banner-text button {
+      margin-top: 15px;
+      width: 38%;
+      max-width: 150px;
+      padding: 8px 0 6px 0;
+      background: linear-gradient(to bottom, #fce388 5%, #ffc600 100%);
+      background-color: #fce388;
+      border-radius: 20px;
+      border: 1px solid #ffc600;
+      cursor: pointer;
+      color: black;
+      font-family: Arial;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none; }
+      #banner-skills #banner-text button:hover {
+        background: linear-gradient(to bottom, #ffc600 5%, #fce388 100%); }
+
+#services {
+  display: block;
+  justify-content: center;
+  padding-top: 35px; }
+  #services h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%; }
+  #services h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold; }
+  #services p {
+    font-size: 1em;
+    padding: 5px 0;
+    letter-spacing: 1.1px;
+    width: 90%;
+    margin: 0 auto; }
+  #services #card-container {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll; }
+    #services #card-container #service-card {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      min-width: 300px;
+      background-image: url(/images/j_pose_back.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: -35px;
+      z-index: -2; }
+      #services #card-container #service-card img {
+        width: 60%;
+        height: 60%;
+        margin: auto; }
+
 /*# sourceMappingURL=main.css.map */
