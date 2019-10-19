@@ -12,7 +12,7 @@
         flex-direction: row;
         width: 30%;
         height: 80%;
-        background-image: url(/images/logo_colour_white.svg);
+        background-image: url(/images/logo_colour_white_notag.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
@@ -46,14 +46,17 @@
     width: 100%;
     position: fixed;
     background-color: rgba(255, 255, 255, .96);
-    animation: nav-drop 1s ease-in-out 1;
+    border-bottom-right-radius: 50% 10%;
+    border-bottom-left-radius: 50% 10%;
+    animation: nav-drop .6s ease-in-out 1;
+    z-index: 1;
 
     #main-logo {
         display: flex;
         flex-direction: row;
         width: 30%;
         height: 80%;
-        background-image: url(/images/logo_colour.svg);
+        background-image: url(/images/logo_colour_noTag.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
