@@ -1,0 +1,419 @@
+#hero-port{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    background-image: "";
+    background-repeat: no-repeat;
+    background-size: auto 700px;
+    background-position: center center;
+    background-position-x: 45%;
+    border-bottom-left-radius: 40% 0%;
+    border-bottom-right-radius: 60% 25%;
+ 
+    @media screen and (min-width: 995px) {background-image: url(/images/port-hero.jpg);}
+    @media screen and (max-width: 994px) {background-image: url(/images/port-hero-tablet.jpg);}
+    @media screen and (max-width: 494px) {background-image: url(/images/port-hero-mobile.jpg); background-size: auto 800px;}
+
+    &:after{
+        content: "";
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0,rgba(100, 0, 230, 0.295) 40%,rgba(38, 0, 177, 0.637) 100%);
+        border-bottom-left-radius: 40% 0%;
+        border-bottom-right-radius: 55% 18%;
+        z-index: -1;
+    }
+
+    #gradient-port{
+        width: 100%;
+        height: inherit;
+        background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0,rgba(100, 0, 230, 0.295) 40%,rgba(38, 0, 177, 0.3) 100%);
+        border-bottom-left-radius: 40% 0%;
+        border-bottom-right-radius: 50% 10%;
+    }
+
+    &:before{
+        content: "";
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0,rgba(100, 0, 230, 0.295) 40%,rgba(38, 0, 177, 0.637) 100%);
+        border-bottom-left-radius: 40% 0%;
+        border-bottom-right-radius: 55% 5%;
+        z-index: -2;
+    }
+
+}
+
+.heading {
+    background: white;
+    height: 5%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .icon-container, .three-dee-container, .arts-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+
+    #title {font-size: 36px; padding:20px;}
+  }
+ 
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .port-slide {
+    height: 30vh;
+    text-align: center;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Image Accordions General
+  .container-general {
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 800px;
+    .gallery-wrap {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 30vh;
+      .item {
+        border-radius: 20px;
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: all 0.8s ease;
+        &:hover {
+          flex: 3;
+        }
+      }
+    }
+  }
+
+.icon-container {
+
+    .section-1 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(1) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/alien/alien_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/alien/alien_iconsf.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/alien/a1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/alien/a2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/alien/a3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/alien/a4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/alien/a5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/alien/a6.jpg);
+        }
+        }
+    }
+
+    .section-2 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(1) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/mech/mech_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/mech/mechanic_icons.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/mech/c1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/mech/c2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/mech/c3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/mech/c4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/mech/c5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/mech/c6.jpg);
+        }
+        }
+    }
+
+    .section-3 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(1) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/music/music_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/music/music_iconsf.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/music/m1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/music/m2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/music/m3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/music/m4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/music/m5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/music/m6.jpg);
+        }
+        }
+    }
+}
+
+.three-dee-container {
+
+    .section-1 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.0);
+            filter: saturate(2) contrast(110%);
+            flex: 4.5;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &:first-of-type {
+            background-image: url(/images/free_standing/top_portion.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/free_standing/angle_top_left.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/free_standing/bottom_up.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/free_standing/eye_level.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/free_standing/display_render3_0258.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/free_standing/shopper.jpg);
+        }
+        }
+    }
+
+    .section-2 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(2) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/mech/mech_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/mech/mechanic_icons.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/mech/c1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/mech/c2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/mech/c3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/mech/c4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/mech/c5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/mech/c6.jpg);
+        }
+        }
+    }
+
+    .section-3 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(2) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/music/music_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/music/music_iconsf.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/music/m1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/music/m2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/music/m3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/music/m4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/music/m5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/music/m6.jpg);
+        }
+        }
+    }
+}
+
+.arts-container {
+
+    .section-1 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.0);
+            filter: saturate(1) contrast(100%);
+        }
+        &:first-of-type {
+            background-image: url(/images/instagram/gibli3.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/char/crybby.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/char/vamp.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/char/CharacterDesignChibli1.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/char/CharacterDesign1.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/char/CharacterDesign2.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/char/CharacterDesign3.jpg);
+        }
+        }
+    }
+
+    .section-2 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(2) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/mix/circut.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/mix/fl_laptop2.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/mix/fl_phone.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/mix/fl_glasses2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/mix/fl_cloud.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/mix/fl_building.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/mech/c5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/mech/c6.jpg);
+        }
+        }
+    }
+
+    .section-3 {
+        .item {
+        &:hover {
+            transform: translate3d(0, 0, 100px);
+            border-radius: 20px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(2) contrast(110%);
+        }
+        &:first-of-type {
+            background-image: url(/images/music/music_icons.jpg);
+        }
+        &:nth-of-type(2) {
+            background-image: url(/images/music/music_iconsf.jpg);
+        }
+        &:nth-of-type(3) {
+            background-image: url(/images/music/m1.jpg);
+        }
+        &:nth-of-type(4) {
+            background-image: url(/images/music/m2.jpg);
+        }
+        &:nth-of-type(5) {
+            background-image: url(/images/music/m3.jpg);
+        }
+        &:nth-of-type(6) {
+            background-image: url(/images/music/m4.jpg);
+        }
+        &:nth-of-type(7) {
+            background-image: url(/images/music/m5.jpg);
+        }
+        &:last-of-type {
+            background-image: url(/images/music/m6.jpg);
+        }
+        }
+    }
+}

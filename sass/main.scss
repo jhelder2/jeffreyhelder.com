@@ -1,6 +1,11 @@
-body {color:white; background-color: black;}
-h1, h2, h3, h4 {color: salmon;}
-.do-transform{
-    transform: translate(50%,50%);
-    user-select: none;
-}
+@import 'modules/_var';
+@import 'modules/_fonts';
+@import 'modules/_header';
+@import 'modules/_home';
+@import 'modules/_footer';
+@import 'modules/_faq';
+@import 'modules/_portfolio'; 
+
+
+
+main {width: 100%;} 
