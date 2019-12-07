@@ -241,6 +241,7 @@
     border-top-right-radius: 60% 25%;
     border-bottom-right-radius: 40% 0%;
     border-bottom-left-radius: 60% 25%;
+    margin-top: 80px;
 
     #skill-container{
         display: flex;
@@ -293,6 +294,7 @@
             border-bottom-left-radius: 55% 5%;
             z-index: -2;
         }
+        
     }
 
     #banner-text{
@@ -335,6 +337,7 @@
     align-content: center;
     padding-top: 35px;
     height: 60vh;
+    z-index: 1;
 
     h2{
         display:inline-block; 
@@ -344,6 +347,7 @@
         letter-spacing: 0.1em; 
         width:100%;
         max-width: 900px;
+        color: white;
     
         @media screen and (min-width: 994px) {text-align: left; margin: 0 auto;}
     }
@@ -373,11 +377,11 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            background-position-y: -35px;
-            z-index: -2;
+            background-position-y: -30px;
+            z-index: 1;
 
             h3 {font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.1em;font-weight: bold;}
-            p {font-size: 1em; letter-spacing: 1.1px; width:90%; margin: 0 auto;}
+            p {font-size: 1em; letter-spacing: 1.1px; width:90%; margin: 0 auto; color: white;}
 
             @media screen and (min-width: 994px){
                 overflow: hidden;
