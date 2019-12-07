@@ -27,5 +27,5 @@ if(isset($_POST['message'])){
 }
 
 mail($recipient, $subject, $content, $header) or die("Your message didn't seem to send. Maybe try again, later?");
-echo "Thank you for your email, ", $name, ". " . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+echo "Thank you for your email, ", $name, ". ";
 ?>
