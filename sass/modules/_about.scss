@@ -32,6 +32,7 @@
         background: linear-gradient(-90deg, rgba(173, 80, 250, 0.384) 0,rgba(100, 0, 230, 0.295) 40%,rgba(38, 0, 177, 0.3) 100%);
         border-bottom-left-radius: 40% 0%;
         border-bottom-right-radius: 50% 10%;
+        z-index: -1;
     }
 
     &:before{

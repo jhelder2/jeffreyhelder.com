@@ -360,12 +360,13 @@
         @media screen and (min-width: 994px){
             overflow: hidden;
             width: 100%;
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
             justify-content: space-between;
         }
         
         #service-card {
+            text-decoration: none;
             margin: 15px;
             display: flex;
             flex-direction: column;
@@ -380,7 +381,7 @@
             background-position-y: -30px;
             z-index: 1;
 
-            h3 {font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.1em;font-weight: bold;}
+            h3 {font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.1em;font-weight: bold; color: black;}
             p {font-size: 1em; letter-spacing: 1.1px; width:90%; margin: 0 auto; color: white;}
 
             @media screen and (min-width: 994px){
@@ -389,10 +390,10 @@
                 background-position-y: -32px;
             }
 
-            img {
-                width: 60%;
-                height: 60%;
-                margin: auto;
+            .img {
+                width: 100%;
+                height: 100%;
+                img {width: 60%; height: 100%; margin: auto;}
             }
 
         }

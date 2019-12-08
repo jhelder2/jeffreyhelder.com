@@ -47,6 +47,28 @@
 
 }
 
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+
+    @media screen and (min-width: 994px) {height: 100vh;}
+
+    .video-wrap{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        @media screen and (min-width: 994px) {width: 80%;}
+
+        video {width: 100%; max-width: 1280px;
+        p {z-index: 2;}}
+    }
+}
+
+
 .heading {
     background: white;
     height: 5%;
@@ -58,35 +80,21 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 40px;
 
     #title {font-size: 36px; padding:20px;}
   }
- 
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .port-slide {
-    height: 30vh;
-    text-align: center;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
-  // Image Accordions General
   .container-general {
     padding: 75px 0;
     margin: 0 auto;
-    width: 800px;
+    width: 90%;
     .gallery-wrap {
       display: flex;
       flex-direction: row;
       width: 100%;
       height: 30vh;
-      .item {
+      .pic {
         border-radius: 20px;
         flex: 1;
         height: 100%;
@@ -95,7 +103,10 @@
         background-repeat: none;
         transition: all 0.8s ease;
         &:hover {
-          flex: 3;
+          flex: 4;
+          height: 140%;
+          box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+          filter: saturate(1) contrast(110%);
         }
       }
     }
@@ -103,13 +114,9 @@
 
 .icon-container {
 
-    .section-1 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(1) contrast(110%);
-        }
+    #row-1 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/alien/alien_icons.jpg);
         }
@@ -137,14 +144,9 @@
         }
     }
 
-    .section-2 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(1) contrast(110%);
-        }
+    #row-2 {
+        .pic {
+
         &:first-of-type {
             background-image: url(/images/mech/mech_icons.jpg);
         }
@@ -172,14 +174,9 @@
         }
     }
 
-    .section-3 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(1) contrast(110%);
-        }
+    #row-3 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/music/music_icons.jpg);
         }
@@ -210,17 +207,9 @@
 
 .three-dee-container {
 
-    .section-1 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.0);
-            filter: saturate(2) contrast(110%);
-            flex: 4.5;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
+    #row-1 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/free_standing/top_portion.jpg);
         }
@@ -242,14 +231,9 @@
         }
     }
 
-    .section-2 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(2) contrast(110%);
-        }
+    #row-2 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/mech/mech_icons.jpg);
         }
@@ -277,14 +261,9 @@
         }
     }
 
-    .section-3 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(2) contrast(110%);
-        }
+    #row-3 {
+        .pic {
+      
         &:first-of-type {
             background-image: url(/images/music/music_icons.jpg);
         }
@@ -315,14 +294,9 @@
 
 .arts-container {
 
-    .section-1 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.0);
-            filter: saturate(1) contrast(100%);
-        }
+    #row-1 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/instagram/gibli3.jpg);
         }
@@ -347,14 +321,9 @@
         }
     }
 
-    .section-2 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(2) contrast(110%);
-        }
+    #row-2 {
+        .pic {
+        
         &:first-of-type {
             background-image: url(/images/mix/circut.jpg);
         }
@@ -370,49 +339,8 @@
         &:nth-of-type(5) {
             background-image: url(/images/mix/fl_cloud.jpg);
         }
-        &:nth-of-type(6) {
+        &:last-of-type {
             background-image: url(/images/mix/fl_building.jpg);
-        }
-        &:nth-of-type(7) {
-            background-image: url(/images/mech/c5.jpg);
-        }
-        &:last-of-type {
-            background-image: url(/images/mech/c6.jpg);
-        }
-        }
-    }
-
-    .section-3 {
-        .item {
-        &:hover {
-            transform: translate3d(0, 0, 100px);
-            border-radius: 20px;
-            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-            filter: saturate(2) contrast(110%);
-        }
-        &:first-of-type {
-            background-image: url(/images/music/music_icons.jpg);
-        }
-        &:nth-of-type(2) {
-            background-image: url(/images/music/music_iconsf.jpg);
-        }
-        &:nth-of-type(3) {
-            background-image: url(/images/music/m1.jpg);
-        }
-        &:nth-of-type(4) {
-            background-image: url(/images/music/m2.jpg);
-        }
-        &:nth-of-type(5) {
-            background-image: url(/images/music/m3.jpg);
-        }
-        &:nth-of-type(6) {
-            background-image: url(/images/music/m4.jpg);
-        }
-        &:nth-of-type(7) {
-            background-image: url(/images/music/m5.jpg);
-        }
-        &:last-of-type {
-            background-image: url(/images/music/m6.jpg);
         }
         }
     }
